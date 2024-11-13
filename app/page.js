@@ -1,6 +1,7 @@
 'use client';
 
 import { Twitter, Send } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -15,17 +16,21 @@ export default function Home() {
 <div className="relative max-w-6xl mx-auto mb-16">
   {/* Character Image Floating */}
   <div className="absolute top-0 right-0 w-1/4 transform -translate-y-1/4 animate-float">
-    <div className="aspect-square rounded-full overflow-hidden bg-white/10 backdrop-blur-sm p-2">
-      <img 
+  <div className="aspect-square rounded-full overflow-hidden bg-white/10 backdrop-blur-sm p-2">
+    <div className="relative w-full h-full">
+      <Image 
         src="/images/pickleduck.png" 
         alt="Toking Pickle Duck" 
-        className="w-full h-full object-cover rounded-full"
+        fill={true}
+        className="object-cover rounded-full"
         style={{
           filter: 'drop-shadow(0 0 30px rgba(134,239,172,0.3))',
         }}
+        priority={true}
       />
     </div>
   </div>
+</div>
 
   {/* Social Links */}
 <div className="flex justify-center space-x-8">
@@ -45,32 +50,39 @@ export default function Home() {
   </a>
 
   {/* Dexscreener */}
-  <a 
-    href="https://dexscreener.com/solana/PKLDUK" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="p-5 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
-  >
-    <img 
+<a 
+  href="https://dexscreener.com/solana/PKLDUK" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="p-5 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
+>
+  <div className="relative w-6 h-6">
+    <Image 
       src="/images/dexscreener-logo.png" 
       alt="Dexscreener" 
-      className="w-6 h-6 invert"  // invert makes black logo white
+      fill={true}
+      className="invert"
+      sizes="24px"  // since w-6 = 24px
     />
-  </a>
+  </div>
+</a>
 
   {/* Pump.fun */}
-  <a 
-    href="https://pump.fun/token/PKLDUK" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="p-5 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
-  >
-    <img 
+<a 
+  href="https://pump.fun/token/PKLDUK" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="p-5 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
+>
+  <div className="relative w-6 h-6">
+    <Image 
       src="/images/pumpfun-logo.png" 
       alt="Pump.fun" 
-      className="w-6 h-6"
+      fill={true}
+      sizes="24px"  // since w-6 = 24px
     />
-  </a>
+  </div>
+</a>
 </div>
 
   {/* Text Content */}
@@ -142,7 +154,7 @@ export default function Home() {
     {/* Address Display with Copy Button */}
     <div className="flex items-center justify-center space-x-3 bg-white/5 rounded-lg p-4 max-w-3xl mx-auto">
       <code className="text-green-300 font-mono text-sm md:text-base break-all">
-        7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr
+        pump.fun
       </code>
       <button 
         onClick={() => {
