@@ -154,7 +154,7 @@ export default function Home() {
     {/* Address Display with Copy Button */}
     <div className="flex items-center justify-center space-x-3 bg-white/5 rounded-lg p-4 max-w-3xl mx-auto">
       <code className="text-green-300 font-mono text-sm md:text-base break-all">
-        pump.fun
+      CLXpdoSjb3ih154jG3ufSnzBq9M79uQrtdbij4S8pump
       </code>
       <button 
         onClick={() => {
