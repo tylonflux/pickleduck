@@ -51,7 +51,7 @@ export default function Home() {
 
   {/* Dexscreener */}
 <a 
-  href="https://dexscreener.com/solana/PKLDUK" 
+  href="https://pump.fun/coin/CLXpdoSjb3ih154jG3ufSnzBq9M79uQrtdbij4S8pump" 
   target="_blank" 
   rel="noopener noreferrer" 
   className="p-5 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
@@ -69,7 +69,7 @@ export default function Home() {
 
   {/* Pump.fun */}
 <a 
-  href="https://pump.fun/token/PKLDUK" 
+  href="https://pump.fun/coin/CLXpdoSjb3ih154jG3ufSnzBq9M79uQrtdbij4S8pump" 
   target="_blank" 
   rel="noopener noreferrer" 
   className="p-5 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
